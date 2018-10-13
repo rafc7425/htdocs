@@ -1,0 +1,28 @@
+<html>
+
+<script>
+
+function ll(chk){
+if(document.getElementById(chk).checked)
+{
+document.getElementById("msg_1").style.display = "none";
+document.getElementById("msg").innerHTML = "Activado";
+}
+else
+{
+document.getElementById("msg_1").style.display = "";
+document.getElementById("msg").innerHTML = "Desactivado";
+}
+
+
+}
+
+
+</script>
+<div  id="msg" ></div>
+
+<div  id="msg_1">Hola</div>
+
+
+CheckBox<input type="checkbox" checked="checked" id="chk_1" onClick="ll(this.id)">
+</html> 
